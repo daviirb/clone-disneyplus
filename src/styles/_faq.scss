@@ -34,6 +34,8 @@
             &__answer {
                 height: 0;
                 overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease;
             }
 
             &--is-open {
@@ -42,8 +44,18 @@
                 }
                 .faq__questions__item__answer {
                     height: auto;
-                    padding: 24px;
+                    padding-bottom: 24px;
+                    transition: height, .5s ease;
                 }
+                ul {
+                    padding: 0 24px;
+                    margin-bottom: 24px;
+                    li {
+                        list-style-type: disc;
+                        margin-top: 16px;
+                    }
+                }
+                
             }
         }
     }
